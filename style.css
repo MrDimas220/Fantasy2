@@ -1,0 +1,86 @@
+body {
+  background: #121212;
+  color: #eee;
+  font-family: "Georgia", serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  padding: 30px;
+  border: 3px solid #8b5e3c;
+  background: #1f1f1f;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #000;
+}
+
+h1 {
+  color: #d4a373;
+}
+
+p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+a {
+  display: inline-block;
+  background: #a67c52;
+  color: #fff;
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+a:hover {
+  background: #d4a373;
+}
+
+.hidden {
+  display: none;
+}
+div {
+  background: url(https://sdmntprukwest.oaiusercontent.com/files/00000000-b694-6243-b2a0-efb51d25d040/raw?se=2025-05-11T16%3A40%3A26Z&sp=r&sv=2024-08-04&sr=b&scid=00000000-0000-0000-0000-000000000000&skoid=02b7f7b5-29f8-416a-aeb6-99464748559d&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-11T02%3A37%3A49Z&ske=2025-05-12T02%3A37%3A49Z&sks=b&skv=2024-08-04&sig=Hdw657rtIwDUhz8AADGUsGhm6x7d/vm%2BUWgmIJm5uV0%3D)
+    no-repeat center center/cover;
+}
+h1 {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dragon {
+  position: absolute;
+  width: 200px;
+  top: 0%;
+  left: -250px;
+  animation:
+    flyAcross 10s linear infinite,
+    flap 2s ease-in-out infinite;
+}
+
+@keyframes flyAcross {
+  0% {
+    left: -250px;
+  }
+  100% {
+    left: 110%;
+  }
+}
+
+@keyframes flap {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
